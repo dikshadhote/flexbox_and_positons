@@ -24,8 +24,9 @@
     <!-- Badge -->
     <div class="badge-component">
         <div class="mb-2">      
-            <p class="m-1">Text with a badge</p>
-            <div class="notification-text-badge small-badge position-text-badge theme-color"> <span class="number-notification-small">4</span></div> 
+            <p class="m-1 text-small-badge">Text with a badge 
+                <div class="notification-text-badge small-badge position-text-badge theme-color"> <span class="number-notification-small">4</span></div> 
+            </p>  
         </div>
         <div>
             <div class="notification-text-badge position-large-badge"><span class="number-notification-large">9+</span></div>
@@ -65,12 +66,12 @@
     </div>
     <!-- Snackbar -->
     <div class="snackbar-component">
-        <button class="btn-primary btn-snackbar">Baseline</button>
+        <button class="btn-primary btn-snackbar" id="baseline-btn">Baseline</button>
         <button class="btn-primary btn-snackbar">Leading</button>
         <button class="btn-primary btn-snackbar">Stacked</button>
-      <div class="snackbar snackbar-baseline mt-2">
+      <div class="snackbar snackbar-baseline mt-2" id="snackbar-baseline">
           <p>Can't send a photo.Retry in 5 seconds.</p>
-          <button class="snackbar-btn">RETRY</button>
+          <button class="snackbar-btn" >RETRY</button>
           <span class="close-icon">X</span>
       </div>
       <div class="snackbar snackbar-leading mt-2">
