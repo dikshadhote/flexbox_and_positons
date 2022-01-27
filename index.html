@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>flex-box position</title>
     <link  rel="stylesheet" href="styles.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body>
  <div class="container">
@@ -22,7 +24,7 @@
         </div>
     </div> 
     <!-- Badge -->
-    <div class="badge-component">
+    <div class="component-container">
         <div class="mb-2">      
             <p class="m-1 text-small-badge">Text with a badge 
                 <div class="notification-text-badge small-badge position-text-badge theme-color"> <span class="number-notification-small">4</span></div> 
@@ -51,12 +53,30 @@
     </div>
     <!-- Card -->
     <div class="card-component">
+        
     </div>
     <!-- Chips -->
     <div class="chips-component">
     </div>
     <!-- Drawer -->
-    <div class="drawer-component">
+    <div class=" component-container drawer-component">
+        <h4 class="mt-2 mb-2 text-grey">Drawer</h4>
+        <div class="drawer-container">
+            <div class="drawer">
+                <div class="mb-1">
+                    <p class="drawer-title">Title</p>
+                    <p class="drawer-subtext">subtext</p>
+                </div>
+                <div class="drawer-list">
+                        <a class="drawer-list-item"><i class="material-icons icon-size mr-2">inbox</i>Inbox</a>
+                        <a class="drawer-list-item "><i class="material-icons  mr-2">star</i>Star</a>
+                        <a class="drawer-list-item"><i class="material-icons  mr-2">send</i>Sent Mail</a>
+                        <a class="drawer-list-item"><i class="material-icons mr-2">drafts</i>Drafts</a>
+                </div>
+            </div>
+
+        </div>
+        
     </div>
     <!-- Dialogs -->
     <div class="dialogs-component">
@@ -65,21 +85,22 @@
     <div class="tabs-component">
     </div>
     <!-- Snackbar -->
-    <div class="snackbar-component">
+    <div class="component-container snackbar-component">
+        <h4 class="mt-2 mb-2 text-grey">Snackbar</h4>
         <button class="btn-primary btn-snackbar" id="baseline-btn">Baseline</button>
-        <button class="btn-primary btn-snackbar">Leading</button>
-        <button class="btn-primary btn-snackbar">Stacked</button>
+        <button class="btn-primary btn-snackbar" id="leading-btn">Leading</button>
+        <button class="btn-primary btn-snackbar" id="stacked-btn">Stacked</button>
       <div class="snackbar snackbar-baseline mt-2" id="snackbar-baseline">
           <p>Can't send a photo.Retry in 5 seconds.</p>
           <button class="snackbar-btn" >RETRY</button>
           <span class="close-icon">X</span>
       </div>
-      <div class="snackbar snackbar-leading mt-2">
+      <div class="snackbar snackbar-leading mt-2" id="snackbar-leading">
         <p>Your photo has been archieved.</p>
         <button class="snackbar-btn">UNDO</button>
         <span class="close-icon">X</span>
     </div>
-    <div class="snackbar-stacked mt-2">
+    <div class="snackbar-stacked mt-2" id="snackbar-stacked">
         <p>This item already has the label "travel". You can add a new label.</p>
         <div class="btn-close-container">
             <button class="snackbar-btn">ADD A NEW LABEL</button>
