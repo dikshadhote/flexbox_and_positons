@@ -11,6 +11,7 @@
     --black-backgrond:#333333;
     --text-grey-color:#0000008a;
     --grey-background-color:#f2f2f2;
+    --white-background-color:#fff;
 }
 
 body{
@@ -81,7 +82,27 @@ padding-top: 1rem;
 /*text-color*/
 .text-grey{
 color:var( --text-grey-color);
+
 }
+/* background-color */
+
+.background-grey-color{
+    background-color: var(--grey-background-color);
+}
+.background-white-color{
+    background-color: var(--white-background-color);  
+}
+/* common component styles */
+.component-title{
+    font-size: 1.25rem;
+}
+
+.component-subtext{
+    font-size: 0.875rem;
+    color: var(--text-grey-color);
+    padding:0.125rem 0rem;
+}
+
 /* Header-Section*/
 
 .header-component{
@@ -247,9 +268,7 @@ position:absolute;
 }
 
 /* Drawer component */
-.drawer-component{
-    background-color: var(--grey-background-color);
-}
+
 .drawer-container{
     display: flex;
     justify-content: center;
@@ -257,13 +276,10 @@ position:absolute;
 }
 .drawer{
     width:15rem;
-    background-color: white;
     border-radius: 0.125rem;
     padding:1rem;
 }
-.drawer-title{
-    font-size: 1.25rem;
-}
+
 
 .drawer-list-item{
     padding: 0.5rem;
@@ -276,11 +292,7 @@ position:absolute;
     background-color: var(--grey-background-color);
     color: var(--theme-color);
 }
-.drawer-subtext{
-    font-size: 0.875rem;
-    color: var(--text-grey-color);
-    padding:0.125rem 0rem;
-}
+
 .drawer-list{
     display:flex;
     flex-direction: column;
@@ -357,4 +369,31 @@ cursor: pointer;
 
 #snackbar-stacked{
     display:none;   
+}
+
+/* Cards */
+
+.small-card{
+    width:25rem;
+    height:10rem;
+    /* padding:1rem; */border-radius: 0.125rem;
+}
+
+.small-card-title-container{
+display:flex;
+flex-direction: row;
+
+}
+
+.small-card-img-container{
+    background-color: var(--theme-color);
+    height: 7rem;
+    width:7rem;
+    border-top-left-radius: 0.125rem;
+    border-top-right-radius: 0.125rem;
+}
+.small-card-icons-container{
+    display: flex;
+    justify-content: space-around;
+    
 }
