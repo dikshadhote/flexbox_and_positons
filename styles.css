@@ -435,18 +435,25 @@ flex-direction: row;
 /* Dialog box */
 .dialog-box{
     width:15rem;
-    height:10rem;
+    height:9.5rem;
     border-radius: 0.25rem;
 }
 .dialog-btn-container{
     display: flex;
     justify-content: flex-end;
+    margin-right: 1rem;
 }
 
 .dialog-btn{
-    padding:1rem;
+    padding:0.875rem;
     color: var(--theme-color);
     background-color: var(--white-background-color);
+    font-size: 0.875rem;
+    font-weight: bold;
+}
+.dialog-btn:hover{
+    cursor: pointer;
+    background-color: var(--grey-background-color);
 }
 .dialog-title{
     padding:1rem 1rem ;
